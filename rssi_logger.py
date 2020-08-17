@@ -1,7 +1,8 @@
+#!/usr/bin/env python3
+
 import subprocess
 import time 
 import csv
-#!/usr/bin/env python3
 
 def read_write_rssi():
     rate = subprocess.check_output('iwconfig wlan0 | grep Bit | cut -b 20-23',shell=True).decode('utf-8').rstrip()
