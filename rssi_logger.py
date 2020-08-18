@@ -23,23 +23,20 @@ def read_write_rssi():
         tx_power = "0"
         link = "0"
         dbm = "0"
-
     else:
         status_router = "up"
-
-    
 
     with open('rssi.csv', mode='a') as rssi_file:
         entry = csv.writer(rssi_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         entry.writerow([timestamp, rate, tx_power, link, dbm, status_router, status_wan]) 
 
-    print("rate",rate)
-    print("tx",tx_power)
-    print("link",link)
-    print("dbm",dbm)
-    print("status wan",status_wan)
-    print("status router", status_router)
-    print("time",timestamp)
+    #print("rate",rate)
+    #print("tx",tx_power)
+    #print("link",link)
+    #print("dbm",dbm)
+    #print("status wan",status_wan)
+    #print("status router", status_router)
+    #print("time",timestamp)
 
 while True:
     
