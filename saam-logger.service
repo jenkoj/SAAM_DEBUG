@@ -5,7 +5,7 @@ Requires=network-online.target
 [Service]
 WorkingDirectory=/root/SAAM_DEBUG
 ExecStart=/root/SAAM_DEBUG/rssi_logger.py
-Restart=on-failure
+Restart=always
 RestartSec=5s
 
 [Install]
